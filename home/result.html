@@ -1,0 +1,13 @@
+<h1>Result is here!</h1>
+
+<h2>You have Entered</h2>
+
+{{wcount}}
+<br/>
+<h3>No. of words are {{count}}</h3>
+<br/>
+List of word is given below:
+{% for k,v in finallist.items|dictsort:"0.lower" %}
+{{k}}={{v}}
+<br/>
+{% endfor %}
